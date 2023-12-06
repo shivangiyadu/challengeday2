@@ -21,7 +21,8 @@ function display_current_time()
     }
 
    const timeString=`${hours}:${minutes}:${seconds} ${session}`;  
-   document.getElementById('clock').textContent=timeString; 
+   document.getElementById('clock').innerText=timeString; 
+   document.getElementById('clock').style.backgroundColor="yellow";
 }
    display_current_time();
 
